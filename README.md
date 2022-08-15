@@ -4,9 +4,9 @@
 
 <div align="center">
   
-# Nonebot_Plugin_BaiduTranslate
+# Nonebot_Plugin_Jrrp
   
-_✨ 基于OneBot适配器的[NoneBot2](https://v2.nonebot.dev/)百度翻译插件 ✨_
+_✨ 基于OneBot适配器的[NoneBot2](https://v2.nonebot.dev/)每日人品插件 ✨_
   
 </div>
 
