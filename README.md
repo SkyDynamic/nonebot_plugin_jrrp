@@ -19,13 +19,13 @@ _✨ 基于OneBot适配器的[NoneBot2](https://v2.nonebot.dev/)每日人品插�
 - 使用 nb-cli
 
 ```
-nb plugin install nonebot_plugin_jrrp
+nb plugin install nonebot_plugin_jrrp-n
 ```
 
 - 使用 pip
 
 ```
-pip install nonebot_plugin_jrrp
+pip install nonebot_plugin_jrrp-n
 ```
 
 ## 如何使用
