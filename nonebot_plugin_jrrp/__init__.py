@@ -1,4 +1,4 @@
-from nonebot.adapters.onebot.v11 import Bot, GroupMessageEvent, GROUP, Message
+from nonebot.adapters.onebot.v11 import Bot, GroupMessageEvent, GROUP, Message, MessageSegment
 from nonebot.plugin import on_command
 from nonebot.params import CommandArg
 from typing import List
@@ -57,8 +57,9 @@ async def _h(bot: Bot, event: GroupMessageEvent, args: Message = CommandArg()):
     if words:
         id = words
     jrrp_num = get_jrrp(str(id))
-    msg = get_msg(jrrp_num)
-    await jrrp.send(msg)
+    result = get_msg(jrrp_num)
+    reply = MessageSegment.reply(event.message_id)
+    await jrrp.send(reply + result)
 
 def rol(num: int, k: int, bits: int = 64):
     b1 = bin(num << k)[2:]
